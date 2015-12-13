@@ -7,13 +7,9 @@ public class BasicGenerator implements Generator {
   String[] nouns = {"alligator","budgie","cat","cow","crow","dog","dragon",
     "guinea pig","goldfish","lion","lizard","magpie","pig","rhino","snake",
     "tarantula","unicorn","worm","zebra"};
-  int random;
-
-  public BasicGenerator() {
-    random = new Random().nextInt(nouns.length);
-  }
 
   public void generate() {
+    int random = new Random().nextInt(nouns.length);
     System.out.println(templates[0].replaceAll("%noun%", nouns[random]));
   }
 }
