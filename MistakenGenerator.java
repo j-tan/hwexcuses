@@ -3,7 +3,8 @@ package hwexcuses;
 import java.util.*;
 
 public class MistakenGenerator implements Generator {
-  String[] templates = {"My %person% mistook it for %thing%"};
+  String[] templates = {"My %person% mistook it for %thing%",
+    "A thief mistook it for %thing% and stole it"};
   String[] person = {"dad","mom","grandpa","grandma","brother","sister",
     "neighbour","mailman"};
   String[] thing = {"trash","wallpaper","posters","magazines","kindling",
@@ -17,7 +18,8 @@ public class MistakenGenerator implements Generator {
   }
 
   public void generate() {
-    System.out.println(templates[0].replaceAll("%person%", person[random])
+    System.out.println(templates[new Random().nextInt(templates.length)]
+      .replaceAll("%person%", person[random])
       .replaceAll("%thing%", thing[random2]));
   }
 }
