@@ -4,7 +4,9 @@ import java.util.*;
 
 public class BasicGenerator implements Generator {
   String[] templates = {"My %noun% ate my homework"};
-  String[] nouns = {"alligator","dog","cat","crow","tarantula"};
+  String[] nouns = {"alligator","budgie","cat","cow","crow","dog","dragon",
+    "guinea pig","goldfish","lion","lizard","magpie","pig","rhino","snake",
+    "tarantula","unicorn","worm","zebra"};
   int random;
 
   public BasicGenerator() {
