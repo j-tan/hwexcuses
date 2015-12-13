@@ -4,7 +4,7 @@ import java.util.*;
 
 public class TechGenerator implements Generator {
   String[] templates = {"My %noun% broke down"};
-  String[] nouns = {"printer","keyboard","mouse","screen"};
+  String[] nouns = {"printer","keyboard","mouse","screen","monitor","internet"};
   int random;
 
   public TechGenerator() {
