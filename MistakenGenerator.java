@@ -18,8 +18,12 @@ public class MistakenGenerator implements Generator {
   }
 
   public void generate() {
-    System.out.println(templates[new Random().nextInt(templates.length)]
-      .replaceAll("%person%", person[random])
-      .replaceAll("%thing%", thing[random2]));
+    int templatesRand = new Random().nextInt(templates.length);
+    int personRand = new Random().nextInt(person.length);
+    int thingRand = new Random().nextInt(thing.length);
+
+    System.out.println(templates[templatesRand]
+      .replaceAll("%person%", person[personRand])
+      .replaceAll("%thing%", thing[thingRand]));
   }
 }
