@@ -4,7 +4,8 @@ import java.util.*;
 
 public class MistakenGenerator implements Generator {
   String[] templates = {"My %person% mistook it for %thing%"};
-  String[] person = {"dad","mom","brother","sister","neighbour","mailman"};
+  String[] person = {"dad","mom","grandpa","grandma","brother","sister",
+    "neighbour","mailman"};
   String[] thing = {"trash","wallpaper","posters","magazines","kindling",
     "toilet paper","secret love notes","newspaper"};
   int random;
