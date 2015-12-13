@@ -7,9 +7,10 @@ public class MistakenGenerator implements Generator {
     "A thief mistook it for %thing% and stole it"};
   String[] person = {"dad","mom","grandpa","grandma","brother","sister",
     "neighbour","mailman","alien friend from pluto"};
-  String[] thing = {"trash","wallpaper","posters","magazines","kindling",
-    "toilet paper","secret love notes","long lost treasure maps",
-    "a secret porn stash","newspaper","Hitler's diary"};
+  String[] thing = {"wallpaper","boy-band posters","dirty magazines",
+    "fireplace kindling","toilet paper","secret love notes",
+    "long lost treasure maps","a secret porn stash","newspaper",
+    "Hitler's diary","some contemporary art piece"};
 
   public void generate() {
     int templatesRand = new Random().nextInt(templates.length);
