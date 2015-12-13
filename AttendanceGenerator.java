@@ -4,10 +4,13 @@ import java.util.*;
 
 public class AttendanceGenerator implements Generator {
   String[] templates = {"I was attending a %event% and didn't complete it"};
-  String[] events = {"funeral","wedding","bucks party","going away celebration",
-    "stag night","religious gathering of the flying spagetti monster",
-    "medical examination of sensitive areas","sore-foot therapy session",
-    "alcholics anonymous session","marriage counselling session"};
+  String[] events = {"funeral","wedding","bucks party at a strip club",
+    "going away celebration for the president","stag night of the century",
+    "religious gathering of the flying spagetti monster",
+    "medical examination of sensitive areas","microaggression therapy session",
+    "alcholics anonymous session","marriage counselling session",
+    "heterosexual awareness conference","white sensitivity training course",
+    "white supremacy conference"};
 
   public void generate() {
     int random = new Random().nextInt(events.length);
