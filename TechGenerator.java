@@ -12,8 +12,10 @@ public class TechGenerator implements Generator {
   public void generate() {
     int templateRand = new Random().nextInt(templates.length);
     int nounRand = new Random().nextInt(nouns.length);
+    int effectRand = new Random().nextInt(effect.length);
 
     System.out.println(templates[templateRand]
-      .replaceAll("%noun%", nouns[nounRand]));
+      .replaceAll("%noun%", nouns[nounRand])
+      .replaceAll("%effect%", effect[effectRand]));
   }
 }
